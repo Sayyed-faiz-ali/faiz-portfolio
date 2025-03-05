@@ -29,26 +29,29 @@ export const Education = () => {
 
   const education = [
     {
-      degree: "Master of Computer Science",
-      institution: "Stanford University",
-      period: "2018 - 2020",
-      location: "California, USA",
-      description: "Specialized in Artificial Intelligence and Machine Learning with a focus on natural language processing. Graduated with honors and completed a thesis on deep learning applications in healthcare."
+      degree: "Bachelor of Technology",
+      
+institution: "Allenhouse Institute of Technology",
+      period: "2021 - 2025",
+      location: "Kanpur, India",
+      description: "Specialized in Artificial Intelligence and Machine Learning."
     },
     {
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "Massachusetts Institute of Technology",
-      period: "2014 - 2018",
-      location: "Massachusetts, USA",
-      description: "Focused on software architecture, data structures, and algorithms. Participated in multiple hackathons and developed an award-winning project for the university's annual tech showcase."
+      degree: "Central Board of Secondary School",
+      institution: "Oxford Model Senior Secondary School",
+      period: "2019 - 2020",
+      location: "Kanpur, India",
+      description: 
+"High School"
     },
     {
-      degree: "Professional Certification",
-      institution: "Google Cloud Platform",
-      period: "2021",
-      location: "Online",
-      description: "Completed professional certification in cloud architecture and deployment. Built and deployed several applications on GCP as part of the certification requirements."
-    }
+      degree: "Central Board of Secondary School",
+      institution: "Oxford Model Senior Secondary School",
+      period: "2020 - 2021",
+      location: "Kanpur, India",
+      description: 
+"Intermidiate" }
+
   ];
 
   return (

@@ -43,7 +43,7 @@ const Header = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const menuItems = ["Home", "Projects", "About", "Skills", "Contact"];
+  const menuItems = ["Home", "Projects", "About", "Skills","Services","Contact"];
 
   return (
     <header 
@@ -55,8 +55,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-xl font-medium transition-opacity hover:opacity-80 text-[#F97316]">
-            Portfolio
+          <Link to="/" className="text-xl font-monoS font-medium transition-opacity hover:opacity-80 text-[#F97316]">
+            Faiz Ali
           </Link>
           
           <div className="flex items-center">
@@ -78,6 +78,7 @@ const Header = () => {
                   >
                     {item}
                   </Link>
+                  
                 ) : (
                   <a 
                     key={item} 

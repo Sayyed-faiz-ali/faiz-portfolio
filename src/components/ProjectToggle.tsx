@@ -1,7 +1,6 @@
-
 import { useState, useRef, useEffect } from "react";
 
-type Category = "All" | "Web Design" | "Mobile Apps" | "Branding";
+type Category = "All" | "Web Design" | "Programming";
 
 interface ProjectToggleProps {
   onCategoryChange: (category: Category) => void;
@@ -12,34 +11,39 @@ const ProjectToggle = ({ onCategoryChange }: ProjectToggleProps) => {
   const [indicatorStyle, setIndicatorStyle] = useState({});
   const toggleRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
-  
-  const categories: Category[] = ["All", "Web Design", "Mobile Apps", "Branding"];
-  
+
+  const categories: Category[] = ["All", "Web Design", "Programming"];
+
   const updateIndicator = (category: Category) => {
     const button = itemRefs.current.get(category);
     if (!button || !toggleRef.current) return;
-    
+
     const toggleRect = toggleRef.current.getBoundingClientRect();
     const buttonRect = button.getBoundingClientRect();
-    
+
     const left = buttonRect.left - toggleRect.left;
     const width = buttonRect.width;
-    
+
     setIndicatorStyle({
       transform: `translateX(${left}px)`,
       width: `${width}px`,
     });
   };
-  
+
   const handleCategoryChange = (category: Category) => {
     setActiveCategory(category);
     onCategoryChange(category);
     updateIndicator(category);
   };
-  
+
   useEffect(() => {
     updateIndicator(activeCategory);
-    const handleResize = () => updateIndicator(activeCategory);
+
+    const handleResize = () => {
+      // Throttling the resize handling to optimize performance
+      requestAnimationFrame(() => updateIndicator(activeCategory));
+    };
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [activeCategory]);
@@ -63,8 +67,8 @@ const ProjectToggle = ({ onCategoryChange }: ProjectToggleProps) => {
             ref={(el) => el && itemRefs.current.set(category, el)}
             onClick={() => handleCategoryChange(category)}
             className={`relative z-10 px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
-              activeCategory === category 
-                ? "text-foreground" 
+              activeCategory === category
+                ? "text-foreground"
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >

@@ -5,12 +5,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Portfolio. All rights reserved.
+            &copy; {new Date().getFullYear()} Faiz Ali. All rights reserved.
           </p>
           
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <a 
-              href="https://twitter.com" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Twitter"
@@ -31,7 +31,7 @@ const Footer = () => {
               </svg>
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/Sayyed-faiz-ali" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -52,7 +52,7 @@ const Footer = () => {
               </svg>
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/faiz-ali-365861261" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"

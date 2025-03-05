@@ -6,7 +6,7 @@ export interface Project {
   title: string;
   description: string;
   category: string;
-  imageUrl: string;
+  imageUrl:string;
   link: string;
 }
 

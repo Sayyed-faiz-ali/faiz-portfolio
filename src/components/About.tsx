@@ -45,7 +45,7 @@ const About = () => {
             <div className="aspect-square rounded-lg overflow-hidden bg-secondary">
               <div 
                 className="w-full h-full bg-cover bg-center"
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')" }}
+                style={{}}
               ></div>
             </div>
           </div>
@@ -54,17 +54,15 @@ const About = () => {
             ref={(el) => (sectionsRef.current[2] = el)} 
             className="opacity-0 translate-y-10 transition-all duration-700 delay-300 space-y-6"
           >
-            <h3 className="text-2xl font-semibold">Hi, I'm Alex</h3>
+            <h3 className="text-2xl font-semibold">Hi, I'm Faiz Ali</h3>
             <p className="text-muted-foreground">
-              I'm a designer and developer with over 5 years of experience creating digital products that people love to use. I focus on building intuitive interfaces that blend form and function seamlessly.
-            </p>
+            Hey there! I'm  Faiz ALi, a passionate full stack developer specializing in MERN and Python.skilled in front-end and back-end technologies with a proven track record in building scalable, user-centric applications. Experienced in the MERN stack, API integrations, and responsive design. Adept at delivering innovative solutions that meet business objectives while ensuring high-quality user experiences            </p>
             <p className="text-muted-foreground">
-              My approach is centered around understanding user needs and business goals to create meaningful solutions that make a difference. I believe that great design is invisible, and that the best interfaces feel natural and intuitive.
             </p>
             <div className="pt-4">
               <h4 className="font-medium mb-4">My Skills</h4>
               <div className="flex flex-wrap gap-2">
-                {["UI/UX Design", "Frontend Development", "Visual Design", "Prototyping", "User Research", "Interaction Design"].map((skill) => (
+                {["UI/UX Design", "Frontend Development", "Backend-end"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-secondary rounded-full text-sm">
                     {skill}
                   </span>
