@@ -14,9 +14,9 @@ const Services = () => {
         <h2 className="text-3xl md:text-4xl font-bold">What We Offer</h2>
       </div>
   
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 hover:scale-95 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Responsive Service */}
-        <div className="service-card bg-background rounded-lg p-6 shadow-lg">
+        <div className="service-card hover:scale-100 bg-background rounded-lg p-6 shadow-lg">
           <div className="text-center mb-6">
             <div className="icon mb-4">
               <img src={Root2} alt="Responsive Design" className="w-16 h-16 mx-auto" />

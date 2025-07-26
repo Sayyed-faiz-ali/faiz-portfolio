@@ -1,6 +1,6 @@
 
 import { useRef, useEffect } from "react";
-import Icon from "../../public/faiz.png";
+import Icon from "../../public/s.jpeg";
 
 const About = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -45,7 +45,7 @@ const About = () => {
           >
             <div className="aspect-square rounded-lg overflow-hidden bg-secondary">
             <div 
-      className="w-full h-full bg-cover bg-center"
+      className="w-full h-full bg-cover bg-center rounded-full"
       style={{ backgroundImage: `url(${Icon})` }} // Set the background image properly
     ></div>
             </div>

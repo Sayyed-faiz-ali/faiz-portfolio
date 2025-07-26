@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from "react";
-import pdf from "../../public/Faiz-Ali (1) (1).pdf";
+import pdf from "../../public/Faiz _Ali_resume.pdf";
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   
@@ -59,13 +59,14 @@ const Hero = () => {
   >
     View Projects
   </a>
-  <a
-    href={pdf} 
-    download="Faiz.pdf" 
-    className="px-6 py-3 rounded-md bg-blue-500 text-white font-medium transition-all duration-300 hover:opacity-90 hover:translate-y-[-2px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 w-full sm:w-auto text-base sm:text-lg md:text-xl"
-  >
-    Download 
-  </a>
+ <a
+  href={pdf}
+  download="Faiz _Ali_resume.pdf"
+  className="px-6 py-3 rounded-md bg-blue-500 text-white font-medium transition-all duration-300 hover:opacity-90 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 w-full sm:w-auto text-base sm:text-lg md:text-xl"
+>
+  Download Resume
+</a>
+
 </div>
 
 

@@ -11,6 +11,7 @@ import Logo from "../../public/quiz.png";
 import Student from "../../public/su.png";
 import shop from "../../public/s1.png";
 import task from "../../public/a.png";
+import doctorApp  from "../../public/Doc.png"
 import Skill from "@/components/SkillSet";
 import Services from "@/components/services"
 
@@ -48,6 +49,15 @@ const projectsData: Project[] = [
 
     link: "https://todo-github-io-1-zfyw.onrender.com/",
   },
+  {
+  id: 5,
+  title: "Online Doctor Appointment",
+  description: "Developed a full-stack doctor appointment booking system where patients can register, view doctors, and book appointments. Built using React, Node.js, Express, and MongoDB.",
+  category: "Full Stack",
+  imageUrl: doctorApp,
+  link:"https://pc-pulsecare.netlify.app/", 
+}
+
 ];
 
 const Index = () => {
